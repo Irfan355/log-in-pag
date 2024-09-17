@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-panel" class="panel active">
+        <div class="content">
+            <h1>WELCOME</h1>
+            <p id="about"><b><i>A programmer is someone who uses coding languages like Python, Java, or JavaScript to build software, websites, and apps. They break down complex problems into smaller tasks, writing code that computers can understand. Their work involves not only creating new systems but also debugging and improving existing ones, ensuring that everything runs smoothly. Programmers collaborate with other developers, designers, and clients to turn ideas into functional, efficient programs. They need strong problem-solving skills, creativity, and the ability to adapt to new technologies and tools.</i></b></p>
+            <button id="get-started-btn">Get Started</button>
+        </div>
+        <div class="corner-buttons">
+            <button id="contact-btn">Contact</button>
+        </div>
+    </div>
+
+    <div id="signup-panel" class="panel">
+        <div class="content">
+            <h1>Sign Up</h1>
+            <form id="signup-form">
+                <input type="text" id="signup-username" placeholder="Username" required>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>If you already have an account, <a href="#" id="login-link"><b>Log in</b></a></p>
+        </div>
+        <div class="corner-buttons">
+            <button id="home-btn">Home</button>
+            <button id="contact-btn-2">Contact</button>
+        </div>
+    </div>
+
+    <div id="login-panel" class="panel">
+        <div class="content">
+            <h1>Login</h1>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="signup-link"><b>Sign Up</b></a></p>
+        </div>
+        <div class="corner-buttons">
+            <button id="home-btn-2"><b>Home</b></button>
+            <button id="contact-btn-3"><b>Contact</b></button>
+        </div>
+    </div>
+
+    <!-- Contact Panel -->
+    <div id="contact-panel" class="panel">
+        <h2>Contact Us</h2>
+        <p>Phone: <a href="tel:+8801735518300">+8801735518300</a></p>
+        <p>Email: <a href="mailto:princesagor085@gmail.com">princesagor085@gmail.com</a></p>
+        <button id="close-contact-btn" onclick="closeContactPanel()">Close</button>
+    </div>
+
+    <!-- Email Form -->
+    <div id="email-panel" class="panel">
+        <div class="content">
+            <h1>Send Email</h1>
+            <form id="send-email-form">
+                <input type="email" id="recipient-email" placeholder="Recipient Email" required>
+                <input type="text" id="email-subject" placeholder="Subject" required>
+                <textarea id="email-body" placeholder="Body" required></textarea>
+                <button type="submit">Send Email</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
